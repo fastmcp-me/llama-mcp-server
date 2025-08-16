@@ -13,7 +13,8 @@ A Model Context Protocol (MCP) server that bridges Claude Desktop with your loca
 
 ## Quick Start
 
-    npm install # LibreModel MCP Server 🤖
+    npm install @openconstruct/llama-mcp-server
+
 
 A Model Context Protocol (MCP) server that bridges Claude Desktop with your local LLM instance running via llama-server.
 
