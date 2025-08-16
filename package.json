@@ -1,0 +1,59 @@
+{
+  "name": "@openconstruct/llama-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server bridge for Claude and llama.cpp - Connect Claude Desktop to your local models",
+  "main": "dist/index.js",
+  "bin": {
+    "libremodel-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": [
+    "mcp", 
+    "model-context-protocol", 
+    "llama", 
+    "llama.cpp", 
+    "libremodel", 
+    "ai", 
+    "claude", 
+    "anthropic",
+    "local-ai",
+    "open-source",
+    "bridge",
+    "server"
+  ],
+  "author": {
+    "name": "Jerry",
+    "url": "https://github.com/openconstruct"
+  },
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openconstruct/llama-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openconstruct/llama-mcp-server/issues"
+  },
+  "homepage": "https://github.com/openconstruct/llama-mcp-server#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
