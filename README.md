@@ -84,7 +84,7 @@ export LLAMA_SERVER_URL="http://localhost:8080"  # Default llama-server URL
 
 | Tool | Description | Parameters |
 |------|-------------|------------|
-| `chat` | Converse with LibreModel | `message`, `temperature`, `max_tokens`, `top_p`, `top_k`, `system_prompt` |
+| `chat` | Converse with MOdel | `message`, `temperature`, `max_tokens`, `top_p`, `top_k`, `system_prompt` |
 | `quick_test` | Run predefined capability tests | `test_type` (hello/math/creative/knowledge) |
 | `health_check` | Check server health and status | None |
 
@@ -112,14 +112,14 @@ npm start
 ## Architecture
 
 ```
-Claude Desktop ←→ LibreModel MCP Server ←→ llama-server API ←→ LibreModel (Gigi)
+Claude Desktop ←→ LLama MCP Server ←→ llama-server API ←→ Local Model
 ```
 
 The MCP server acts as a bridge, translating MCP protocol messages into llama-server API calls and formatting responses for Claude Desktop.
 
 ## Troubleshooting
 
-**"Cannot reach LibreModel server"**
+**"Cannot reach LLama server"**
 - Ensure llama-server is running on the configured port
 - Check that the model is loaded and responding
 - Verify firewall/network settings
@@ -132,7 +132,6 @@ The MCP server acts as a bridge, translating MCP protocol messages into llama-se
 **Poor response quality**
 - Adjust temperature and sampling parameters
 - Try different system prompts
-- Check if LibreModel needs more training
 
 ## License
 
@@ -140,4 +139,5 @@ CC0-1.0 - Public Domain. Use freely!
 
 ---
 
-Built with ❤️ for open-source AI and the LibreModel project.
+Built with ❤️ for open-source AI and the LibreModel project. by Claude Sonnet4
+
